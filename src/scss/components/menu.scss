@@ -1,10 +1,11 @@
 .context-menu {
-  background: #0f172a;
-  border: 1px solid #a3e635;
-  padding: 15px 32px 15px 54px;
+  background: linear-gradient(180deg, #0b132b 0%, #000 100%);
+  border: 1px solid #0c9d8b;
+  padding: 32px 32px 32px 54px;
   max-width: 288px;
   width: 100%;
   margin: 0 auto;
+  flex-direction: column;
   position: fixed;
   top: 0;
   right: 0;
@@ -20,9 +21,8 @@
 
 .close-btn {
   display: none;
-  background-color: transparent;
-  width: 28px;
-  height: 18px;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-bottom: 24px;
 
@@ -45,7 +45,6 @@
 }
 
 .context-list-link {
-  display: flex;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -53,7 +52,7 @@
   transition: all 0.3s ease-in-out;
 
   &:active {
-    color: #a3e635;
+    color: #0ecbaf;
   }
 }
 
@@ -64,15 +63,19 @@
 }
 
 .context-privacy-link {
-  display: flex;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 14px;
   color: #f1f5f9;
+  transition: all 0.3s ease-in-out;
+
+  &:active {
+    color: #0ecbaf;
+  }
 }
 
 .is-open {
-  display: block;
+  display: flex;
   transform: translateX(0);
   opacity: 1;
   visibility: visible;
