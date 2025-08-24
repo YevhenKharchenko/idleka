@@ -1,41 +1,53 @@
 <section class="section contact-section" id="contact">
   <div class="container contact-container">
     <h2 class="section-title">Contact</h2>
-    <p class="section-subtitle contact-subtitle">
-      Let’s Build Your Webinar Strategy
-    </p>
-    <div class="contact-content-wrapper">
-      <div class="contact-top-wrapper">
+    <div class="contact-pic-wrapper">
+      <picture>
+        <source
+          srcset="./img/contact/contact-bg-desk.png"
+          media="(min-width: 1440px)"
+          width="628"
+          height="530"
+        />
+        <source
+          srcset="./img/contact/contact-bg-mob.png"
+          width="311"
+          height="262"
+        />
+        <img
+          class="contact-img"
+          src="./img/contact/contact-bg-mob.png"
+          alt="People working"
+          width="311"
+          height="262"
+          loading="lazy"
+        />
+      </picture>
+      <div class="contact-text-wrapper">
+        <p class="section-subtitle contact-subtitle">
+          Let’s Build Your Calm System
+        </p>
+        <p class="contact-text">
+          Ready to reduce chaos and reclaim your time? Let’s talk.
+        </p>
         <div class="contact-email-wrapper">
-          <svg class="email-icon" width="30" height="30">
+          <svg class="contact-email-icon" width="25" height="25">
             <use href="./img/sprite.svg#icon-email"></use>
           </svg>
-          <p class="contact-email-text">
-            Email:
-            <a href="mailto:info@eventqela.site" class="contact-email-link"
-              >info@eventqela.site</a
+          <div class="contact-email-text-wrapper">
+            <p class="contact-email-text">Email:&nbsp;</p>
+            <a href="mailto:info@idleka.site" class="contact-email-link"
+              >info@idleka.site</a
             >
-          </p>
+          </div>
         </div>
-        <div class="contact-top-text-wrapper">
-          <p class="contact-top-text"> Social Hashtags:</p>
-          <p class="contact-hashtag-text">
-            #EventQela #WebinarStrategy #ThoughtLeadershipLive
-          </p>
+        <div class="contact-company-text-wrapper">
+          <p class="contact-company-text">Company:&nbsp;</p>
+          <a href="" class="contact-company-link"
+            >Idleka, Limited Liability Company</a
+          >
         </div>
-        <div class="contact-top-text-wrapper">
-          <p class="contact-top-text">Company Info:</p>
-          <p class="contact-hashtag-text">
-            EventQela Strategy LLC – Registered Limited Liability Company
-          </p>
-        </div>
-      </div>
-      <div class="contact-bottom-wrapper">
-        <p class="contact-bottom-text">
-          Have questions or want to explore how we can work together?<br />
-          Reach out and let’s talk about your goals.
-        </p>
-        <a href="#about" class="contact-btn">Request Consultation</a>
+        <a href="#home" class="contact-get-btn">Start With a Free Audit</a>
       </div>
     </div>
   </div>

@@ -55,6 +55,7 @@
   top: 50%;
   transform: translateY(-50%);
   left: 32px;
+  backdrop-filter: blur(5px);
 
   @include media(desktop) {
     border-radius: 20px;

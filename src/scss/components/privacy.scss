@@ -1,5 +1,5 @@
 .policy-section {
-  background: #0f172a;
+  background: linear-gradient(180deg, #000 0%, #0b132b 100%);
   padding-top: 88px;
   padding-bottom: 60px;
 
@@ -10,35 +10,42 @@
 }
 
 .policy-title {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  color: #f1f5f9;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  background: linear-gradient(180deg, #0ecbaf 0%, rgba(14, 203, 175, 0.1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 24px;
 
   @include media(desktop) {
-    font-size: 40px;
+    font-size: 64px;
     margin-bottom: 40px;
   }
 }
 
 .policy-subtitle {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  color: #f1f5f9;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  background: linear-gradient(180deg, #0ecbaf 0%, rgba(14, 203, 175, 0.1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 24px;
 
   @include media(desktop) {
-    font-size: 32px;
+    font-size: 48px;
     margin-bottom: 40px;
   }
 }
 
 .policy-text {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
   color: #f1f5f9;
 
   &:not(:last-child) {
@@ -56,9 +63,10 @@
 }
 
 .policy-item {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
   color: #f1f5f9;
   margin-bottom: 8px;
 
@@ -77,12 +85,12 @@
 }
 
 .policy-span {
-  color: #395dd4;
+  color: #2a3aa0;
   text-decoration: underline;
 }
 
 .policy-link {
-  color: #395dd4;
+  color: #2a3aa0;
   text-decoration: underline;
   word-wrap: break-word;
 }

@@ -1,0 +1,126 @@
+.faq-section {
+  padding-bottom: 100px;
+
+  @include media(desktop) {
+    padding-bottom: 200px;
+  }
+}
+
+.faq-subtitle {
+  max-width: 311px;
+
+  @include media(desktop) {
+    max-width: max-content;
+  }
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  @include media(desktop) {
+    gap: 40px;
+  }
+}
+
+.faq-list-item {
+  max-width: 311px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+
+  @include media(desktop) {
+    max-width: 1068px;
+  }
+}
+
+.faq-top-text-btn {
+  border-radius: 9px;
+  padding: 15px 23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(rgba(14, 203, 175, 0.1), rgba(14, 203, 175, 0.1))
+      padding-box,
+    linear-gradient(#020409, #020409) padding-box,
+    linear-gradient(180deg, #0ecbaf 0%, rgba(14, 203, 175, 0.1) 100%) border-box;
+  border: 1px solid transparent;
+
+  @include media(desktop) {
+    border-radius: 30px;
+    padding: 20px 80px;
+  }
+}
+
+.faq-toggle-symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 15px;
+  height: 15px;
+  transition: transform 0.3s ease-in-out;
+
+  @include media(desktop) {
+    min-width: 50px;
+    height: 50px;
+  }
+}
+
+.faq-icon {
+  @include media(desktop) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.faq-btn-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  color: #f0f1f1;
+
+  @include media(desktop) {
+    font-size: 28px;
+  }
+}
+
+.faq-bottom-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  text-align: center;
+  color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.is-visible {
+  margin-top: 3px;
+  max-height: 500px;
+  opacity: 1;
+
+  @include media(desktop) {
+    margin-top: 8px;
+  }
+}
+
+.faq-list-item.faq-open .faq-toggle-symbol {
+  transform: rotate(180deg);
+}
+
+.faq-list-item.faq-open {
+}
+
+.faq-list-item.faq-open .faq-btn-text {
+}

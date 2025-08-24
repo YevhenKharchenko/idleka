@@ -122,18 +122,6 @@
   }
 }
 
-.hero-explore-btn-wrapper {
-  border-radius: 20px;
-  padding: 1px;
-  background: linear-gradient(180deg, #0ecbaf 0%, rgba(14, 203, 175, 0.1) 100%);
-  width: 100%;
-  max-width: 311px;
-
-  @include media(desktop) {
-    max-width: 543px;
-  }
-}
-
 .hero-explore-btn {
   border-radius: 20px;
   padding: 18px 0;
@@ -150,9 +138,11 @@
   background: linear-gradient(180deg, #0b132b 0%, #000 100%) padding-box,
     linear-gradient(180deg, #0ecbaf 0%, rgba(14, 203, 175, 0.1) 100%) border-box;
   border: 1px solid transparent;
+  max-width: 311px;
 
   @include media(desktop) {
     font-size: 20px;
+    max-width: 543px;
   }
 }
 
