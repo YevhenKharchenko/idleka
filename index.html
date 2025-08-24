@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://idleka.site" />
+    <link rel="icon" type="image/png" href="/idleka/favicon.png" />
+    <title>Idleka</title>
+    
+    <script type="module" crossorigin src="/idleka/commonHelpers3.js"></script>
+    <link rel="stylesheet" href="/idleka/assets/styles-c9429d83.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <div class="header-bg-wrapper">
+      <nav class="nav">
+        <a class="header-logo-link" href="./">
+          <picture>
+            <source
+              srcset="data:image/png;base64,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 "
+              media="(min-width: 1440px)"
+              width="139"
+              height="39"
+            />
+            <source
+              srcset="data:image/png;base64,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 "
+              width="93"
+              height="24"
+            />
+            <img
+              class="header-logo-img"
+              src="data:image/png;base64,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"
+              alt="Logo"
+              width="93"
+              height="24"
+            />
+          </picture>
+        </a>
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="./index.html#home">Home</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="./index.html#services">Services</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="./index.html#templates">Templates</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="./index.html#about">About</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="./index.html#faq">FAQs</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="./index.html#contact">Contact</a>
+          </li>
+        </ul>
+        <button class="nav-btn" type="button" aria-label="Open mobile menu">
+          <svg class="menu-icon" width="28" height="18">
+            <use href="/idleka/assets/sprite-5da3cace.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    <div class="context-menu">
+  <button class="close-btn" type="button" aria-label="Close mobile menu">
+    <svg class="close-icon" width="32" height="32">
+      <use href="/idleka/assets/sprite-5da3cace.svg#icon-close"></use>
+    </svg>
+  </button>
+  <nav class="context-nav">
+    <ul class="context-nav-list">
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#home">Home</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#services">Services</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#templates">Templates</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#about">About</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#faq">FAQs</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#contact">Contact</a>
+      </li>
+    </ul>
+    <ul class="context-privacy-list">
+      <li class="context-privacy-item">
+        <a class="context-privacy-link" href="./terms-and-conditions.html"
+          >Terms of Service</a
+        >
+      </li>
+      <li class="context-privacy-item">
+        <a class="context-privacy-link" href="./privacy-policy.html"
+          >Privacy Policy</a
+        >
+      </li>
+      <li class="context-privacy-item">
+        <a class="context-privacy-link" href="./cookies-policy.html"
+          >Cookies Policy</a
+        >
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    <main>
+      <section class="section hero-section" id="home">
+  <div class="hero-wrapper">
+    <div class="container hero-container">
+      <div class="hero-bg-wrapper">
+        <h1 class="hero-title">
+          Work Smarter,<br class="hero-title-br" />
+          Rest Deeper
+        </h1>
+        <p class="hero-top-text">
+          Systems consulting for
+          <span class="hero-top-text-span"
+            >creators, coaches, and service pros</span
+          >
+          who want their business to run smoothly — even when they’re offline.
+        </p>
+        <p class="hero-bottom-text">
+          At Idleka, we help you build lean, no-code systems that reduce manual
+          tasks, streamline your operations, and bring back your creative
+          energy.
+        </p>
+        <div class="hero-btn-wrapper">
+          <a href="#contact" class="hero-get-btn">Get a Free Ops Audit</a>
+          <a href="#contact" class="hero-explore-btn">Explore Templates</a>
+        </div>
+      </div>
+    </div>
+    <picture>
+      <source
+        srcset="/idleka/assets/hero-robot-desk-0dcd3aeb.png "
+        media="(min-width: 1440px)"
+        width="591"
+        height="742"
+      />
+      <source srcset="/idleka/assets/hero-robot-mob-12d589cd.png " width="243" height="310" />
+      <img
+        class="hero-robot-img"
+        src="/idleka/assets/hero-robot-mob-12d589cd.png"
+        alt="Robot"
+        width="243"
+        height="310"
+      />
+    </picture>
+  </div>
+</section>
+
+      <section class="section services-section" id="services">
+  <div class="container services-container">
+    <h2 class="section-title">What We Do</h2>
+    <p class="section-subtitle services-subtitle">
+      Intelligent Systems for Solopreneurs & Teams
+    </p>
+    <div class="services-pic-wrapper">
+      <picture>
+        <source
+          srcset="/idleka/assets/services-bg-desk-3ca20833.png "
+          media="(min-width: 1440px)"
+          width="628"
+          height="351"
+        />
+        <source
+          srcset="/idleka/assets/services-bg-mob-7e2f11bd.png "
+          width="311"
+          height="174"
+        />
+        <img
+          class="services-img"
+          src="/idleka/assets/services-bg-mob-7e2f11bd.png"
+          alt="Woman working"
+          width="311"
+          height="174"
+          loading="lazy"
+        />
+      </picture>
+      <div class="services-text-wrapper">
+        <p class="services-text">
+          We specialize in turning your cluttered business into an efficient
+          machine.
+        </p>
+        <p class="services-text">
+          Our online consulting services focus on operational clarity,
+          automation, and digital infrastructure.
+        </p>
+        <p class="services-text">
+          Whether you’re onboarding clients, delivering content, or launching
+          products — we help it all run on autopilot.
+        </p>
+      </div>
+    </div>
+    <p class="section-subtitle services-subtitle">Subservices:</p>
+    <ul class="services-list">
+      <li class="services-list-item">
+        <p class="services-item-text">
+          Workflow Automation (Zapier, Make, Airtable)
+        </p>
+      </li>
+      <li class="services-list-item">
+        <p class="services-item-text">Notion Workspaces & Dashboards</p>
+      </li>
+      <li class="services-list-item">
+        <p class="services-item-text">
+          Funnel Optimization (Calendly, Stripe, Email)
+        </p>
+      </li>
+      <li class="services-list-item">
+        <p class="services-item-text">Offer Clarity & Journey Mapping</p>
+      </li>
+      <li class="services-list-item">
+        <p class="services-item-text">Content Ops & Repurposing Flows</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section templates-section" id="templates">
+  <div class="container templates-container">
+    <h2 class="section-title">Idle Kits (Digital Products)</h2>
+    <p class="section-subtitle templates-subtitle">
+      DIY Systems That Save You Hours
+    </p>
+    <p class="templates-text">
+      Browse our growing library of Notion dashboards, Airtable bases,
+      automation packs, and AI templates — built to plug directly into your
+      business.
+    </p>
+    <ul class="templates-list">
+      <li class="templates-list-item">
+        <picture>
+          <source
+            srcset="/idleka/assets/templates-commitment-desk-18102402.png "
+            media="(min-width: 1440px)"
+            width="100"
+            height="100"
+          />
+          <source
+            srcset="/idleka/assets/templates-commitment-mob-e72c90b6.png "
+            width="60"
+            height="60"
+          />
+          <img
+            class="templates-img"
+            src="/idleka/assets/templates-commitment-mob-e72c90b6.png"
+            alt="Commitment"
+            width="60"
+            height="60"
+            loading="lazy"
+          />
+        </picture>
+        <p class="templates-item-text">Client Onboarding OS</p>
+      </li>
+      <li class="templates-list-item">
+        <picture>
+          <source
+            srcset="/idleka/assets/templates-calendar-desk-92052391.png "
+            media="(min-width: 1440px)"
+            width="100"
+            height="100"
+          />
+          <source
+            srcset="/idleka/assets/templates-calendar-mob-dad97624.png "
+            width="60"
+            height="60"
+          />
+          <img
+            class="templates-img"
+            src="/idleka/assets/templates-calendar-mob-dad97624.png"
+            alt="Calendar"
+            width="60"
+            height="60"
+            loading="lazy"
+          />
+        </picture>
+        <p class="templates-item-text">Content Calendar w/ Repurpose Flow</p>
+      </li>
+      <li class="templates-list-item">
+        <picture>
+          <source
+            srcset="/idleka/assets/templates-market-demand-desk-dd6b9069.png "
+            media="(min-width: 1440px)"
+            width="100"
+            height="100"
+          />
+          <source
+            srcset="/idleka/assets/templates-market-demand-mob-eacb251b.png "
+            width="60"
+            height="60"
+          />
+          <img
+            class="templates-img"
+            src="/idleka/assets/templates-market-demand-mob-eacb251b.png"
+            alt="Market demand"
+            width="60"
+            height="60"
+            loading="lazy"
+          />
+        </picture>
+        <p class="templates-item-text">Weekly Business Hub</p>
+      </li>
+      <li class="templates-list-item">
+        <picture>
+          <source
+            srcset="/idleka/assets/templates-market-demand-desk-dd6b9069.png "
+            media="(min-width: 1440px)"
+            width="100"
+            height="100"
+          />
+          <source
+            srcset="/idleka/assets/templates-market-demand-mob-eacb251b.png "
+            width="60"
+            height="60"
+          />
+          <img
+            class="templates-img"
+            src="/idleka/assets/templates-market-demand-mob-eacb251b.png"
+            alt="Market demand"
+            width="60"
+            height="60"
+            loading="lazy"
+          />
+        </picture>
+        <p class="templates-item-text">Automation Blueprint Templates</p>
+      </li>
+    </ul>
+    <a href="#contact" class="templates-btn">View All Templates</a>
+  </div>
+</section>
+
+      <section class="section clients-section" id="clients">
+  <div class="container clients-container">
+    <h2 class="section-title">Who It's For</h2>
+    <p class="section-subtitle clients-subtitle">Is Idleka Right for You?</p>
+    <p class="clients-text">
+      Our systems are designed for online businesses that want flow, not
+      friction.
+    </p>
+    <p class="section-subtitle clients-subtitle">
+      You’ll benefit most if you're:
+    </p>
+    <ul class="clients-list">
+      <li class="clients-list-item">
+        <picture>
+          <source
+            srcset="/idleka/assets/clients-img1-desk-983a2b19.png "
+            media="(min-width: 1440px)"
+            width="411"
+            height="280"
+          />
+          <source
+            srcset="/idleka/assets/clients-img1-mob-716c8407.png "
+            width="148"
+            height="107"
+          />
+          <img
+            class="clients-img"
+            src="/idleka/assets/clients-img1-mob-716c8407.png"
+            alt="Client"
+            width="148"
+            height="107"
+            loading="lazy"
+          />
+        </picture>
+        <p class="clients-item-text">A solo creator juggling too many tabs</p>
+      </li>
+      <li class="clients-list-item">
+        <picture>
+          <source
+            srcset="/idleka/assets/clients-img2-desk-569e8fb5.png "
+            media="(min-width: 1440px)"
+            width="411"
+            height="280"
+          />
+          <source
+            srcset="/idleka/assets/clients-img2-mob-a9f7439c.png "
+            width="148"
+            height="107"
+          />
+          <img
+            class="clients-img"
+            src="/idleka/assets/clients-img2-mob-a9f7439c.png"
+            alt="Client"
+            width="148"
+            height="107"
+            loading="lazy"
+          />
+        </picture>
+        <p class="clients-item-text">
+          A coach scaling your offers without burnout
+        </p>
+      </li>
+      <li class="clients-list-item">
+        <picture>
+          <source
+            srcset="/idleka/assets/clients-img3-desk-a61db7f1.png "
+            media="(min-width: 1440px)"
+            width="411"
+            height="280"
+          />
+          <source
+            srcset="/idleka/assets/clients-img3-mob-c1d789fc.png "
+            width="148"
+            height="107"
+          />
+          <img
+            class="clients-img"
+            src="/idleka/assets/clients-img3-mob-c1d789fc.png"
+            alt="Client"
+            width="148"
+            height="107"
+            loading="lazy"
+          />
+        </picture>
+        <p class="clients-item-text">
+          A freelancer tired of writing manual emails
+        </p>
+      </li>
+      <li class="clients-list-item">
+        <picture>
+          <source
+            srcset="/idleka/assets/clients-img4-desk-d7baa1f2.png "
+            media="(min-width: 1440px)"
+            width="411"
+            height="280"
+          />
+          <source
+            srcset="/idleka/assets/clients-img4-mob-853775ab.png "
+            width="148"
+            height="107"
+          />
+          <img
+            class="clients-img"
+            src="/idleka/assets/clients-img4-mob-853775ab.png"
+            alt="Client"
+            width="148"
+            height="107"
+            loading="lazy"
+          />
+        </picture>
+        <p class="clients-item-text">
+          A team trying to work async and stay lean
+        </p>
+      </li>
+      <li class="clients-list-item">
+        <picture>
+          <source
+            srcset="/idleka/assets/clients-img5-desk-7b20f837.png "
+            media="(min-width: 1440px)"
+            width="411"
+            height="280"
+          />
+          <source
+            srcset="/idleka/assets/clients-img5-mob-cea698a4.png "
+            width="148"
+            height="107"
+          />
+          <img
+            class="clients-img"
+            src="/idleka/assets/clients-img5-mob-cea698a4.png"
+            alt="Client"
+            width="148"
+            height="107"
+            loading="lazy"
+          />
+        </picture>
+        <p class="clients-item-text">
+          A digital business that wants freedom and structure
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section snapshots-section" id="snapshots">
+  <div class="container snapshots-container">
+    <h2 class="section-title">Case Snapshots</h2>
+    <p class="section-subtitle snapshots-subtitle">Real Clients. Real Calm.</p>
+    <ul class="snapshots-list">
+      <li class="snapshots-list-item">
+        <picture>
+          <source
+            srcset="/idleka/assets/snapshots-img1-desk-5c1c8968.png "
+            media="(min-width: 1440px)"
+            width="411"
+            height="280"
+          />
+          <source
+            srcset="/idleka/assets/snapshots-img1-mob-a627f774.png "
+            width="148"
+            height="101"
+          />
+          <img
+            class="snapshots-img"
+            src="/idleka/assets/snapshots-img1-mob-a627f774.png"
+            alt="Client"
+            width="148"
+            height="101"
+            loading="lazy"
+          />
+        </picture>
+        <p class="snapshots-item-title">“Coach to Calm”</p>
+        <p class="snapshots-item-text">
+          Business coach automates onboarding & follow-up, gains 8+ hours/month.
+        </p>
+      </li>
+      <li class="snapshots-list-item">
+        <picture>
+          <source
+            srcset="/idleka/assets/snapshots-img2-desk-e2a5d12d.png "
+            media="(min-width: 1440px)"
+            width="411"
+            height="280"
+          />
+          <source
+            srcset="/idleka/assets/snapshots-img2-mob-cccfd218.png "
+            width="148"
+            height="101"
+          />
+          <img
+            class="snapshots-img"
+            src="/idleka/assets/snapshots-img2-mob-cccfd218.png"
+            alt="Client"
+            width="148"
+            height="101"
+            loading="lazy"
+          />
+        </picture>
+        <p class="snapshots-item-title">“Studio Flow”</p>
+        <p class="snapshots-item-text">
+          Creative agency replaces Slack chaos with async Notion system.
+        </p>
+      </li>
+      <li class="snapshots-list-item">
+        <picture>
+          <source
+            srcset="/idleka/assets/snapshots-img3-desk-bc258898.png "
+            media="(min-width: 1440px)"
+            width="411"
+            height="280"
+          />
+          <source
+            srcset="/idleka/assets/snapshots-img3-mob-dcbc3d89.png "
+            width="148"
+            height="101"
+          />
+          <img
+            class="snapshots-img"
+            src="/idleka/assets/snapshots-img3-mob-dcbc3d89.png"
+            alt="Client"
+            width="148"
+            height="101"
+            loading="lazy"
+          />
+        </picture>
+        <p class="snapshots-item-title">“Productized Success”</p>
+        <p class="snapshots-item-text">
+          Freelancer turns service into scalable product with templates + email
+          flows.
+        </p>
+      </li>
+      <li class="snapshots-list-item">
+        <picture>
+          <source
+            srcset="/idleka/assets/snapshots-img4-desk-6d380a3e.png "
+            media="(min-width: 1440px)"
+            width="411"
+            height="280"
+          />
+          <source
+            srcset="/idleka/assets/snapshots-img4-mob-39dc99f2.png "
+            width="148"
+            height="101"
+          />
+          <img
+            class="snapshots-img"
+            src="/idleka/assets/snapshots-img4-mob-39dc99f2.png"
+            alt="Client"
+            width="148"
+            height="101"
+            loading="lazy"
+          />
+        </picture>
+        <p class="snapshots-item-title">“Launch Lite”</p>
+        <p class="snapshots-item-text">
+          First-time founder builds funnel in 4 days using Idle Sprint + Stripe
+          integration.
+        </p>
+      </li>
+    </ul>
+    <a href="#contact" class="snapshots-btn"
+      >Want your story here? Start with an audit →</a
+    >
+  </div>
+</section>
+
+      <section class="section about-section" id="about">
+  <div class="about-title-wrapper">
+    <div class="container">
+      <h2 class="section-title">About Idleka</h2>
+      <p class="section-subtitle about-subtitle">Built for Busy Brains</p>
+    </div>
+  </div>
+  <div class="container about-container">
+    <div class="about-img-wrapper">
+      <picture>
+        <source
+          srcset="/idleka/assets/about-bg-desk-878c3837.png "
+          media="(min-width: 1440px)"
+          width="1280"
+          height="616"
+        />
+        <source
+          srcset="/idleka/assets/about-bg-mob-2d9ad410.png "
+          width="375"
+          height="245"
+        />
+        <img
+          class="about-img"
+          src="/idleka/assets/about-bg-mob-2d9ad410.png"
+          alt="Client"
+          width="375"
+          height="245"
+          loading="lazy"
+        />
+      </picture>
+      <div class="about-text-wrapper">
+        <p class="about-text about-top-text">
+           Idleka is a Limited Liability Company founded by systems strategist
+          <span class="about-text-span">Alex Rowe</span>.
+        </p>
+        <p class="about-text about-middle-text">
+          After 8+ years working with creators and consultants, we noticed the
+          same trend: burnout from complexity.
+        </p>
+        <p class="about-text about-bottom-text">
+          Our mission is to deliver clean, efficient systems that feel like a
+          breath of fresh air — not another thing to manage.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section testimonials-section" id="testimonials">
+  <div class="container testimonials-container">
+    <h2 class="section-title">Testimonials</h2>
+    <ul class="testimonials-list">
+      <li class="testimonials-list-item">
+        <picture>
+          <source
+            srcset="/idleka/assets/testimonials-jenna-desk-6277281b.png "
+            media="(min-width: 1440px)"
+            width="193"
+            height="189"
+          />
+          <source
+            srcset="/idleka/assets/testimonials-jenna-mob-a401a950.png "
+            width="116"
+            height="113"
+          />
+          <img
+            class="testimonials-img"
+            src="/idleka/assets/testimonials-jenna-mob-a401a950.png"
+            alt="Avatar"
+            width="116"
+            height="113"
+            loading="lazy"
+          />
+        </picture>
+        <div class="testimonials-text-wrapper">
+          <p class="testimonials-item-name">Jenna L.</p>
+          <p class="testimonials-item-profession">Course Creator</p>
+          <p class="testimonials-item-text">
+            “I used to feel overwhelmed just opening my laptop. Idleka set up a
+            Notion hub and automations that made my biz 10x easier. I finally
+            feel in control.”
+          </p>
+        </div>
+      </li>
+      <li class="testimonials-list-item">
+        <picture>
+          <source
+            srcset="/idleka/assets/testimonials-marcus-desk-02d131c1.png "
+            media="(min-width: 1440px)"
+            width="193"
+            height="189"
+          />
+          <source
+            srcset="/idleka/assets/testimonials-marcus-mob-b06e33c3.png "
+            width="116"
+            height="113"
+          />
+          <img
+            class="testimonials-img"
+            src="/idleka/assets/testimonials-marcus-mob-b06e33c3.png"
+            alt="Avatar"
+            width="116"
+            height="113"
+            loading="lazy"
+          />
+        </picture>
+        <div class="testimonials-text-wrapper">
+          <p class="testimonials-item-name">Marcus K.</p>
+          <p class="testimonials-item-profession">Funnel Designer</p>
+          <p class="testimonials-item-text">
+            “Every system felt patched together before. Now, with the workflows
+            Idleka set up, I can actually rest without worrying what’s falling
+            through the cracks.”
+          </p>
+        </div>
+      </li>
+      <li class="testimonials-list-item">
+        <picture>
+          <source
+            srcset="/idleka/assets/testimonials-shay-desk-71f31552.png "
+            media="(min-width: 1440px)"
+            width="193"
+            height="189"
+          />
+          <source
+            srcset="/idleka/assets/testimonials-shay-mob-4f912532.png "
+            width="116"
+            height="113"
+          />
+          <img
+            class="testimonials-img"
+            src="/idleka/assets/testimonials-shay-mob-4f912532.png"
+            alt="Avatar"
+            width="116"
+            height="113"
+            loading="lazy"
+          />
+        </picture>
+        <div class="testimonials-text-wrapper">
+          <p class="testimonials-item-name">Shay T.</p>
+          <p class="testimonials-item-profession">Copywriter</p>
+          <p class="testimonials-item-text">
+            “The 7-day sprint changed my life. I have a full content pipeline
+            now — and I didn’t have to touch Zapier once.”
+          </p>
+        </div>
+      </li>
+      <li class="testimonials-list-item">
+        <picture>
+          <source
+            srcset="/idleka/assets/testimonials-taylor-desk-7d5d1b78.png "
+            media="(min-width: 1440px)"
+            width="193"
+            height="189"
+          />
+          <source
+            srcset="/idleka/assets/testimonials-taylor-mob-ef2fba64.png "
+            width="116"
+            height="113"
+          />
+          <img
+            class="testimonials-img"
+            src="/idleka/assets/testimonials-taylor-mob-ef2fba64.png"
+            alt="Avatar"
+            width="116"
+            height="113"
+            loading="lazy"
+          />
+        </picture>
+        <div class="testimonials-text-wrapper">
+          <p class="testimonials-item-name">Taylor V.</p>
+          <p class="testimonials-item-profession">Digital Artist</p>
+          <p class="testimonials-item-text">
+            “Great templates, clear guidance, and real results. Idleka is like
+            having a systems co-founder in your pocket.”
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section faq-section" id="faq">
+  <div class="container faq-container">
+    <h2 class="section-title faq-title">FAQ</h2>
+    <p class="section-subtitle faq-subtitle">Your Questions, Answered</p>
+    <ul class="faq-list">
+      <li class="faq-list-item">
+        <button class="faq-top-text-btn">
+          <span class="faq-btn-text"
+            >Do I need to know Notion or Zapier already?</span
+          >
+          <span class="faq-toggle-symbol"
+            ><svg class="faq-icon" width="15" height="15">
+              <use href="/idleka/assets/sprite-5da3cace.svg#icon-down-arrow"></use></svg
+          ></span>
+        </button>
+        <p class="faq-bottom-text">
+          Not at all. We build systems for all levels of experience. You’ll get
+          full walkthroughs and video explainers, or we’ll set it all up for
+          you.
+        </p>
+      </li>
+      <li class="faq-list-item">
+        <button class="faq-top-text-btn">
+          <span class="faq-btn-text"
+            >What’s the difference between consulting and templates?</span
+          >
+          <span class="faq-toggle-symbol"
+            ><svg class="faq-icon" width="15" height="15">
+              <use href="/idleka/assets/sprite-5da3cace.svg#icon-down-arrow"></use></svg
+          ></span>
+        </button>
+        <p class="faq-bottom-text">
+          Consulting is personalized — we audit and build with you. Templates
+          are pre-built and customizable. You can always start with a template
+          and upgrade later.
+        </p>
+      </li>
+      <li class="faq-list-item">
+        <button class="faq-top-text-btn">
+          <span class="faq-btn-text">How long does a 1:1 sprint take?</span>
+          <span class="faq-toggle-symbol"
+            ><svg class="faq-icon" width="15" height="15">
+              <use href="/idleka/assets/sprite-5da3cace.svg#icon-down-arrow"></use></svg
+          ></span>
+        </button>
+        <p class="faq-bottom-text">
+          Our most popular sprint is 7 days, with daily touchpoints and clear
+          deliverables. You’ll get working systems, not just advice.
+        </p>
+      </li>
+      <li class="faq-list-item">
+        <button class="faq-top-text-btn">
+          <span class="faq-btn-text"
+            >Can I get help with my content system?</span
+          >
+          <span class="faq-toggle-symbol"
+            ><svg class="faq-icon" width="15" height="15">
+              <use href="/idleka/assets/sprite-5da3cace.svg#icon-down-arrow"></use></svg
+          ></span>
+        </button>
+        <p class="faq-bottom-text">
+          Yes. We love building content calendars, pipelines, repurposing
+          workflows, and automations that support your publishing flow.
+        </p>
+      </li>
+      <li class="faq-list-item">
+        <button class="faq-top-text-btn">
+          <span class="faq-btn-text">What’s the cost range?</span>
+          <span class="faq-toggle-symbol"
+            ><svg class="faq-icon" width="15" height="15">
+              <use href="/idleka/assets/sprite-5da3cace.svg#icon-down-arrow"></use></svg
+          ></span>
+        </button>
+        <p class="faq-bottom-text">
+          Templates start at $29. 1:1 sprints range from $250–$1,500 depending
+          on complexity. We’ll always scope with transparency.
+        </p>
+      </li>
+      <li class="faq-list-item">
+        <button class="faq-top-text-btn">
+          <span class="faq-btn-text">What tools do you work with?</span>
+          <span class="faq-toggle-symbol"
+            ><svg class="faq-icon" width="15" height="15">
+              <use href="/idleka/assets/sprite-5da3cace.svg#icon-down-arrow"></use></svg
+          ></span>
+        </button>
+        <p class="faq-bottom-text">
+          We specialize in Notion, Airtable, Zapier, Make, Tally, Stripe, and
+          basic email tools. Our goal is to keep your tech stack lean and
+          usable.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section contact-section" id="contact">
+  <div class="container contact-container">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-pic-wrapper">
+      <picture>
+        <source
+          srcset="/idleka/assets/contact-bg-desk-b6e18bee.png "
+          media="(min-width: 1440px)"
+          width="628"
+          height="530"
+        />
+        <source
+          srcset="/idleka/assets/contact-bg-mob-b8b28708.png "
+          width="311"
+          height="262"
+        />
+        <img
+          class="contact-img"
+          src="/idleka/assets/contact-bg-mob-b8b28708.png"
+          alt="People working"
+          width="311"
+          height="262"
+          loading="lazy"
+        />
+      </picture>
+      <div class="contact-text-wrapper">
+        <p class="section-subtitle contact-subtitle">
+          Let’s Build Your Calm System
+        </p>
+        <p class="contact-text">
+          Ready to reduce chaos and reclaim your time? Let’s talk.
+        </p>
+        <div class="contact-email-wrapper">
+          <svg class="contact-email-icon" width="25" height="25">
+            <use href="/idleka/assets/sprite-5da3cace.svg#icon-email"></use>
+          </svg>
+          <div class="contact-email-text-wrapper">
+            <p class="contact-email-text">Email:&nbsp;</p>
+            <a href="mailto:info@idleka.site" class="contact-email-link"
+              >info@idleka.site</a
+            >
+          </div>
+        </div>
+        <div class="contact-company-text-wrapper">
+          <p class="contact-company-text">Company:&nbsp;</p>
+          <a href="" class="contact-company-link"
+            >Idleka, Limited Liability Company</a
+          >
+        </div>
+        <a href="#home" class="contact-get-btn">Start With a Free Audit</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="footer">
+  <div class="footer-top-wrapper">
+    <div class="container footer-container">
+      <a class="footer-logo-link" href="./">
+        <picture>
+          <source
+            srcset="data:image/png;base64,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 "
+            media="(min-width: 1440px)"
+            width="139"
+            height="39"
+          />
+          <source
+            srcset="data:image/png;base64,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 "
+            width="93"
+            height="24"
+          />
+          <img
+            class="footer-logo-img"
+            src="data:image/png;base64,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"
+            alt="Logo"
+            width="93"
+            height="24"
+          />
+        </picture>
+      </a>
+      <nav class="footer-nav">
+        <ul class="footer-list">
+          <li class="footer-list-item">
+            <a class="footer-link" href="./index.html#home">Home</a>
+          </li>
+          <li class="footer-list-item">
+            <a class="footer-link" href="./index.html#services">Services</a>
+          </li>
+          <li class="footer-list-item">
+            <a class="footer-link" href="./index.html#templates">Templates</a>
+          </li>
+          <li class="footer-list-item">
+            <a class="footer-link" href="./index.html#about">About</a>
+          </li>
+          <li class="footer-list-item">
+            <a class="footer-link" href="./index.html#faq">FAQs</a>
+          </li>
+          <li class="footer-list-item">
+            <a class="footer-link" href="./index.html#contact">Contact</a>
+          </li>
+        </ul>
+        <ul class="footer-privacy-list">
+          <li class="footer-privacy-item">
+            <a class="footer-privacy-link" href="./privacy-policy.html"
+              >Privacy Policy</a
+            >
+          </li>
+          <li class="footer-privacy-item">
+            <a class="footer-privacy-link" href="./terms-and-conditions.html"
+              >Terms of Service</a
+            >
+          </li>
+          <li class="footer-privacy-item">
+            <a class="footer-privacy-link" href="./cookies-policy.html"
+              >Cookies Policy</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="footer-email-wrapper">
+        <svg class="email-icon" width="25" height="25">
+          <use href="/idleka/assets/sprite-5da3cace.svg#icon-email"></use>
+        </svg>
+        <div class="footer-email-text-wrapper">
+          <p class="footer-email-text">Email:&nbsp;</p>
+          <a href="mailto:info@idleka.site" class="footer-email-link"
+            >info@idleka.site</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom-wrapper">
+    <div class="container footer-container">
+      <p class="footer-bottom-text">
+        Advisvia LLC – All rights reserved. | 2025
+      </p>
+    </div>
+  </div>
+</footer>
+
+    <section id="cookie-banner" class="cookie-banner-section">
+  <div class="cookie-banner-content-wrapper">
+    <h2 class="cookies-banner-title">Cookies Policy</h2>
+    <p class="cookie-banner-text">
+       We use cookies to improve your experience on our website.<br />
+      By browsing this website, you agree to our use of cookies.
+    </p>
+    <div class="cookie-banner-buttons">
+      <div class="cookie-banner-btn-wrapper">
+        <button class="cookie-btn" id="cookie-accept">ACCEPT COOKIES</button>
+      </div>
+      <div class="cookie-banner-btn-wrapper">
+        <button class="cookie-btn" id="cookie-decline">DECLINE COOKIES</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
+  </body>
+</html>
