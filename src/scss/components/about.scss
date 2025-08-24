@@ -1,15 +1,12 @@
 .about-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  scroll-margin-top: 30px;
+  padding-bottom: 100px;
 
   @include media(desktop) {
-    padding-top: 147px;
     padding-bottom: 200px;
   }
 }
 
-.about-subtitle {
+.about-title-wrapper {
   margin-bottom: 40px;
 
   @include media(desktop) {
@@ -17,87 +14,89 @@
   }
 }
 
-.about-top-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin-bottom: 40px;
+.about-container {
+  padding: 0;
 
   @include media(desktop) {
-    flex-direction: row-reverse;
-    gap: 24px;
-    margin-bottom: 82px;
+    padding: 0 80px;
   }
 }
 
-.about-top-text-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 22px;
+.about-subtitle {
+  max-width: 311px;
+  margin-bottom: 0;
 
   @include media(desktop) {
-    gap: 45px;
+    max-width: max-content;
   }
 }
 
-.about-span {
-  background: linear-gradient(180deg, #a3e635 0%, rgba(255, 255, 255, 0) 100%);
-  min-width: 20px;
-  height: 100px;
+.about-img-wrapper {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 
   @include media(desktop) {
-    min-width: 40px;
-    height: 201px;
+    max-width: 1280px;
   }
+}
+
+.about-img {
+}
+
+.about-text-wrapper {
+  background: rgba(14, 203, 175, 0.1);
+  border: 1px solid #0ecbaf;
+  border-radius: 8px;
+  padding: 12px 6px;
+  max-width: 164px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 32px;
+
+  @include media(desktop) {
+    border-radius: 20px;
+    padding: 54px 20px;
+    max-width: 519px;
+    left: 109px;
+  }
+}
+
+.about-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.4;
+  text-align: center;
+  color: #1e1e1e;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.about-text-span {
+  font-weight: 600;
 }
 
 .about-top-text {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  color: #f1f5f9;
-  max-width: 269px;
+  margin-bottom: 6px;
 
   @include media(desktop) {
-    font-size: 40px;
-    max-width: 543px;
+    margin-bottom: 24px;
   }
 }
 
-.about-bottom-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+.about-middle-text {
+  margin-bottom: 12px;
 
   @include media(desktop) {
-    flex-direction: row;
-    align-items: center;
-    gap: 24px;
+    margin-bottom: 40px;
   }
 }
 
 .about-bottom-text {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  text-align: center;
-  color: #f1f5f9;
-
-  &:nth-child(1) {
-    margin-bottom: 24px;
-  }
-
-  &:nth-child(2) {
-    margin-bottom: 20px;
-  }
-
-  @include media(desktop) {
-    font-size: 24px;
-    text-align: left;
-    max-width: 628px;
-
-    &:nth-child(2) {
-      margin-bottom: 40px;
-    }
-  }
+  font-weight: 600;
 }
