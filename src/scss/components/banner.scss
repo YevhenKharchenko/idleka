@@ -1,8 +1,7 @@
 .cookie-banner-section {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
-  background: #0f172a;
-  border: 1px solid #a3e635;
-  padding: 45px 32px 60px 32px;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(180deg, #0ecbaf 0%, rgba(14, 203, 175, 0.1) 100%);
   width: 100%;
   max-width: 375px;
   margin: 0 auto;
@@ -15,15 +14,26 @@
   display: none;
 
   @include media(desktop) {
-    padding: 80px 109px 80px 109px;
+    max-width: 1280px;
+    bottom: 60px;
+  }
+}
+
+.cookie-banner-content-wrapper {
+  background: linear-gradient(180deg, #0b132b 0%, #000 100%);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  padding: 45px 32px 60px 32px;
+  border-radius: 19px;
+
+  @include media(desktop) {
+    padding: 80px 109px 103px 109px;
     max-width: 1440px;
-    bottom: 100px;
   }
 }
 
 .cookies-banner-title {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
   font-size: 24px;
   color: #f1f5f9;
   margin-bottom: 32px;
@@ -59,49 +69,35 @@
   }
 }
 
-.cookie-accept-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #a3e635;
-  padding: 16px 0;
-  width: 148px;
-  height: 50px;
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  color: #000;
+.cookie-banner-btn-wrapper {
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(180deg, #0ecbaf 0%, rgba(14, 203, 175, 0.1) 100%);
   width: 100%;
-  max-width: 148px;
+  max-width: 150px;
 
   @include media(desktop) {
-    padding: 14.5px 0;
-    font-size: 24px;
-    max-width: 519px;
-    min-height: 60px;
+    max-width: 521px;
   }
 }
 
-.cookie-decline-btn {
+.cookie-btn {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, #0b132b 0%, #000 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #a3e635;
+  border-radius: 19px;
   padding: 16px 0;
-  width: 148px;
-  height: 50px;
-  font-family: 'Space Grotesk', sans-serif;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 14px;
-  color: #000;
-  width: 100%;
-  max-width: 147px;
+  color: #f1f5f9;
 
   @include media(desktop) {
-    padding: 14.5px 0;
+    padding: 15.5px 0;
     font-size: 24px;
-    max-width: 519px;
-    min-height: 60px;
   }
 }
 

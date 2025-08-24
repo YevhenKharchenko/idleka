@@ -1,6 +1,12 @@
 .context-menu {
   background: linear-gradient(180deg, #0b132b 0%, #000 100%);
-  border: 1px solid #0c9d8b;
+  border: 1px solid;
+  border-image: linear-gradient(
+    180deg,
+    #0ecbaf 0%,
+    rgba(14, 203, 175, 0.1) 100%
+  );
+  border-image-slice: 1;
   padding: 32px 32px 32px 54px;
   max-width: 288px;
   width: 100%;
